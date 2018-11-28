@@ -14,3 +14,7 @@ NDCrash 是一款开源的 Native Crash 捕获框架，为了兼容各个系统�
 
 
 生成的 crash 都存放在 `/data/data/com.dodola.breakpad/files` 或者 `/sdcard/crashDump（给予权限）`下
+
+![截图](screen.png)
+
+
