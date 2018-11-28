@@ -1,0 +1,3 @@
+[submodule "lzma"]
+	path = lzma
+	url = https://android.googlesource.com/platform/external/lzma
