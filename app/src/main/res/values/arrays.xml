@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="crash_array">
+        <item>BreakPad</item>
+        <item>NDCrash_Corkscrew</item>
+        <item>NDCrash_Unwind</item>
+        <item>NDCrash_UnwindStack</item>
+        <item>NDCrash_Cxxabi</item>
+        <item>NDCrash_StackScan</item>
+    </array>
+</resources>

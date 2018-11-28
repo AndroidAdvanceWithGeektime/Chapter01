@@ -22,28 +22,11 @@
             android:layout_height="wrap_content"
             android:text="选择框架：" />
 
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:gravity="center_vertical"
-            android:id="@+id/radio_group"
-            android:orientation="horizontal">
-
-            <RadioButton
-                android:id="@+id/radio_breakpad"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:checked="true"
-                android:layout_weight="1"
-                android:text="BREAKPAD" />
-
-            <RadioButton
-                android:id="@+id/radio_ndcrash"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="NDCRASH" />
-        </RadioGroup>
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
     </LinearLayout>
 
