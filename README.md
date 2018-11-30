@@ -15,7 +15,9 @@ NDK(使用ndk 16-19版本)
 
 例子支持`armeabi-v7a`,`arm64-v8a`,`x86` 三种平台。
 
-生成的 crash 都存放在 `/data/data/com.dodola.breakpad/files/crashDump` 或者 `/sdcard/crashDump` 下
+1. 点击`crash`按钮应用会发生一个native崩溃
+
+2. 生成的 crash信息，如果授予Sdcard权限会优先存放在`/sdcard/crashDump`下，便于我们做进一步的分析。反之会放到目录 `/data/data/com.dodola.breakpad/files/crashDump`
 
 
 ![截图](screen.png)
