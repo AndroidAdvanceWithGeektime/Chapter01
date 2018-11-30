@@ -106,3 +106,8 @@ arm-linux-androideabi-addr2line -f -C -e sample/build/intermediates/transforms/m
 Crash()
 
 ```
+
+相关内容
+=======
+https://github.com/google/breakpad
+例子里只提供了 Mac 的工具，如果需要其他平台的工具，可以去编译源码获得，可以参照 breakpad 项目的说明文档来编译获取。
