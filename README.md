@@ -106,6 +106,27 @@ arm-linux-androideabi-addr2line -f -C -e sample/build/intermediates/transforms/m
 Crash()
 
 ```
+补充内容
+=======
+
+关于在 x86模拟器下无法生成 crash 日志问题的解决方法
+
+在 x86 模拟器下无法生成日志的解决方法如下：
+1. 将 ndk 切换到 16b，下载地址： https://developer.android.com/ndk/downloads/older_releases?hl=zh-cn 
+mac 版：https://dl.google.com/android/repository/android-ndk-r16b-darwin-x86_64.zip
+2. 在 Androidstudio 里设置 ndk 路径为ndk-16b的路径
+3. 在 sample 和 breakpad-build 的 build.gradle 配置里增加如下配置
+```
+ externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11"
+                arguments "-DANDROID_TOOLCHAIN=gcc"
+            }
+        }
+
+```
+
+
 
 相关内容
 =======
